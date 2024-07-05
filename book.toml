@@ -1,0 +1,19 @@
+[book]
+title        = "rust_template"
+authors      = ["Pierre Marijon"]
+description  = "Perform dna reverse complement"
+language     = "en"
+multilingual = false
+src          = "docs"
+
+[build]
+build-dir      = "website"
+create-missing = false
+
+[output.html]
+smart-punctuation = true
+mathjax-support = true
+git-repository-url = "https://github.com/natir/rust_template/"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/natir/rust_template/edit/main/docs/{path}"
+site-url = "/rust_template/"

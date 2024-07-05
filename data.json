@@ -1,0 +1,12 @@
+{
+    "project_name": "rust_template",
+    "author_name": "Pierre Marijon",
+    "author_mail": "pierre@marijon.fr",
+    "project_description": "Perform dna reverse complement",
+    "msrv": "1.72",
+    "home_path_uri": "https://github.com/natir/rust_template/",
+    "repository_uri": "https://github.com/natir/rust_template/",
+    "repository_name": "rust_template",
+    "website_uri": "https://natir.github.io/rust_template/",
+    "license": "MIT"
+}

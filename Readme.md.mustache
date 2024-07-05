@@ -1,0 +1,43 @@
+# {{project_name}} 🧬 💻
+
+![tests]({{repository_uri}}/workflows/tests/badge.svg)
+![lints]({{repository_uri}}/workflows/lints/badge.svg)
+![msrv]({{repository_uri}}/workflows/msrv/badge.svg)
+[![website]({{repository_uri}}/workflows/website/badge.svg)]({{website_uri}})
+[![license](https://img.shields.io/badge/license-{{license}}-green)]({{repository_uri}}/blob/main/LICENSE)
+
+{{ project_description }}
+
+## Usage
+
+FOR LIB PACKAGE START
+
+Add this in your Cargo.toml
+```
+{{repository_name}} = { version = "0.1" }
+```
+
+FOR LIB PACKAGE END
+
+
+FOR BIN PACKAGE START
+
+### From source
+
+```bash
+git clone {repository_uri}
+cd {{repository_name}}
+cargo install --path
+```
+
+FOR BIN PACKAGE END
+
+## How to cite
+
+```
+{{author_name}}, {{project_name}}: {{project_description}}, JOSS, https://doi.org/XXXXXXX
+```
+
+## Minimum Supported Rust Version
+
+Currently the minimum supported Rust version is {{msrv}}.

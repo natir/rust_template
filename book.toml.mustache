@@ -1,0 +1,19 @@
+[book]
+title        = "{{project_name}}"
+authors      = ["{{author_name}}"]
+description  = "{{project_description}}"
+language     = "en"
+multilingual = false
+src          = "docs"
+
+[build]
+build-dir      = "website"
+create-missing = false
+
+[output.html]
+smart-punctuation = true
+mathjax-support = true
+git-repository-url = "{{repository_uri}}"
+git-repository-icon = "fa-github"
+edit-url-template = "{{repository_uri}}edit/main/docs/{path}"
+site-url = "/{{project_name}}/"

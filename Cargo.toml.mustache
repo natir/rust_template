@@ -1,0 +1,80 @@
+[package]
+name    = "{{project_name}}"
+version = "0.1.0"
+authors = [
+	"{{author_name}} <{{author_mail}}>"
+]
+
+description  = "{{project_description}}"
+edition      = "2021"
+rust-version = "{{msrv}}"
+
+homepage      = "{{home_page_uri}}"
+repository    = "{{repository_uri}}"
+documentation = "{{documentation_uri}}"
+
+readme       = "Readme.md"
+license-file = "LICENSE"
+
+
+[lib]
+name = "{{project_name}}"
+path = "src/lib.rs"
+
+[[bin]]
+name = "{{project_name}}"
+path = "src/main.rs"
+
+
+[dependencies]
+# binary dependency
+## CLI management
+clap       = { version = "4", features = ["derive"] }
+
+## Error management
+anyhow     = { version = "1" }
+
+## Logging management
+stderrlog  = { version = "0.6" }
+
+# library dependency
+## Error management
+thiserror  = { version = "1" }
+
+## Logging management
+log        = { version = "0.4" }
+
+
+[dev-dependencies]
+# binary dependency
+## Functional test
+assert_cmd = { version = "2" }
+tempfile   = { version = "3" }
+
+# library dependency
+## Benchmark management
+criterion  = { version = "0.5" }
+
+
+[features]
+default = []
+bench = []
+
+
+[[bench]]
+name              = "rev_comp"
+required-features = ["bench"]
+harness           = false
+
+
+[profile.release]
+lto             = 'thin'
+opt-level       = 3
+overflow-checks = false
+panic           = 'abort'
+incremental     = false
+
+
+[profile.profiling]
+inherits = "release"
+debug    = true
