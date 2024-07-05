@@ -46,7 +46,7 @@ PASTE TRACEBACK HERE
 
 - Os:
 - Rust version:
-- rust_template: Version
+- rust_template version:
 
 ### Additional context
 <!-- Add any other relevant context about the problem here,
