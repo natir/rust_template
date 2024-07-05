@@ -12,4 +12,5 @@
 
 - [Contributing](contributing.md)
 - [Code of Conduct](code_of_conduct.md)
+- [Change log](change_log.md)
 - [License](license.md)
