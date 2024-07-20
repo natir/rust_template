@@ -7,7 +7,7 @@ authors = [
 
 description  = "Perform dna reverse complement"
 edition      = "2021"
-rust-version = "1.72"
+rust-version = "1.74"
 
 homepage      = ""
 repository    = "https://github.com/natir/rust_template/"

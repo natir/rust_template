@@ -40,4 +40,4 @@ Pierre Marijon, rust_template: Perform dna reverse complement, JOSS, https://doi
 
 ## Minimum Supported Rust Version
 
-Currently the minimum supported Rust version is 1.72.
+Currently the minimum supported Rust version is 1.74.
